@@ -1,0 +1,5 @@
+{
+	"atom-text-editor.vim-mode-plus.normal-mode": {
+		"-": "acetate:open-folder"
+	}
+}

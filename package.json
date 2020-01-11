@@ -1,0 +1,43 @@
+{
+	"name": "acetate",
+	"main": "./lib/acetate",
+	"version": "0.0.0",
+	"description": "A short description of your package",
+	"keywords": [],
+	"repository": "https://github.com/atom/acetate",
+	"license": "MIT",
+	"engines": {
+		"atom": ">=1.0.0 <2.0.0"
+	},
+	"dependencies": {
+		"etch": "^0.14.0"
+	},
+	"devDependencies": {
+		"husky": "^2.3.0",
+		"prettier": "^1.17.0",
+		"eslint": "^5.16.0",
+		"@quarterto/eslint-config": "^1.4.0",
+		"@quarterto/prettier": "^1.1.0",
+		"lint-staged": "^8.1.7"
+	},
+	"eslintConfig": {
+		"extends": [
+			"@quarterto"
+		]
+	},
+	"prettier": "@quarterto/prettier",
+	"lint-staged": {
+		"*.{js,json}": [
+			"prettier --write",
+			"git add"
+		]
+	},
+	"husky": {
+		"hooks": {
+			"pre-commit": "lint-staged"
+		}
+	},
+	"deserializers": {
+		"AcetateView": "deserializeAcetateView"
+	}
+}

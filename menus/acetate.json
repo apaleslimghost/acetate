@@ -1,0 +1,26 @@
+{
+  "context-menu": {
+    "atom-text-editor": [
+      {
+        "label": "Toggle acetate",
+        "command": "acetate:toggle"
+      }
+    ]
+  },
+  "menu": [
+    {
+      "label": "Packages",
+      "submenu": [
+        {
+          "label": "acetate",
+          "submenu": [
+            {
+              "label": "Toggle",
+              "command": "acetate:toggle"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
