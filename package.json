@@ -39,5 +39,12 @@
 	},
 	"deserializers": {
 		"AcetateView": "deserializeAcetateView"
+	},
+	"consumedServices": {
+		"atom.file-icons": {
+			"versions": {
+				"1.0.0": "setIconService"
+			}
+		}
 	}
 }
