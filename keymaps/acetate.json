@@ -1,5 +1,8 @@
 {
-	"atom-text-editor.vim-mode-plus.normal-mode": {
+	"atom-text-editor.editor.vim-mode-plus:not(.insert-mode)": {
+		"-": "acetate:open-folder"
+	},
+	".acetate": {
 		"-": "acetate:open-folder"
 	}
 }
